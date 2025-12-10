@@ -1,0 +1,55 @@
+<idea-plugin>
+    <id>com.arvin.tabindex</id>
+    <name>Tab Number Index</name>
+    <vendor>Arvin</vendor>
+
+    <description><![CDATA[
+        Adds numeric prefixes to editor tabs, making it straightforward to map IdeaVim shortcuts to dedicated actions that jump directly to a tab by its index.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <editorTabTitleProvider implementation="com.arvin.tabindex.TabNumberIndexer"/>
+        <projectService serviceImplementation="com.arvin.tabindex.TabIndexProjectService"/>
+    </extensions>
+
+    <actions>
+        <action id="TabNumberIndex.SwitchTab1"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab1"
+                text="Select Tab 1"
+                description="Activate editor tab #1"/>
+        <action id="TabNumberIndex.SwitchTab2"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab2"
+                text="Select Tab 2"
+                description="Activate editor tab #2"/>
+        <action id="TabNumberIndex.SwitchTab3"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab3"
+                text="Select Tab 3"
+                description="Activate editor tab #3"/>
+        <action id="TabNumberIndex.SwitchTab4"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab4"
+                text="Select Tab 4"
+                description="Activate editor tab #4"/>
+        <action id="TabNumberIndex.SwitchTab5"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab5"
+                text="Select Tab 5"
+                description="Activate editor tab #5"/>
+        <action id="TabNumberIndex.SwitchTab6"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab6"
+                text="Select Tab 6"
+                description="Activate editor tab #6"/>
+        <action id="TabNumberIndex.SwitchTab7"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab7"
+                text="Select Tab 7"
+                description="Activate editor tab #7"/>
+        <action id="TabNumberIndex.SwitchTab8"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab8"
+                text="Select Tab 8"
+                description="Activate editor tab #8"/>
+        <action id="TabNumberIndex.SwitchTab9"
+                class="com.arvin.tabindex.TabNumberIndexAction$Tab9"
+                text="Select Tab 9"
+                description="Activate editor tab #9"/>
+    </actions>
+</idea-plugin>

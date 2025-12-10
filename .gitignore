@@ -1,0 +1,17 @@
+# Gradle build output and local caches
+.gradle/
+build/
+out/
+
+# IntelliJ / IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS / tooling noise
+.DS_Store
+*.log
+hs_err_pid*
+.classpath
+.project
